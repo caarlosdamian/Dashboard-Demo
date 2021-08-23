@@ -4,6 +4,7 @@ import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LocationSearchingIcon from "@material-ui/icons/LocationSearching";
+import PublishIcon from '@material-ui/icons/Publish';
 export default function User() {
   return (
     <div className="user">
@@ -50,7 +51,75 @@ export default function User() {
             </div>
           </div>
         </div>
-        <div className="userUpdate"></div>
+        <div className="userUpdate">
+          <span className="userUpdateTitle">Edit</span>
+          <form className="userUpdateForm">
+            <div className="userUpdateLeft">
+              <div className="userUpdateItem">
+                <label className="">User Name</label>
+                <input
+                  type="text"
+                  placeholder="Mariana54"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label className="">Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Mariana Trujillo"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label className="">User Name</label>
+                <input
+                  type="text"
+                  placeholder="Mariana Trujillo"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label className="">Email</label>
+                <input
+                  type="text"
+                  placeholder="Mariana@gmail.com
+"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label className="">Phone</label>
+                <input
+                  type="text"
+                  placeholder="+1 215 654 65"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label className="">Addres</label>
+                <input
+                  type="text"
+                  placeholder="New York | USA
+                  "
+                  className="userUpdateInput"
+                />
+              </div>
+            </div>
+            <div className="userUpdateRight">
+              <div className="userUpdateUpload">
+                <img
+                  src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                  className="userUpdateImg"
+                />
+                <label htmlFor="file"><PublishIcon/></label>
+                <input type="file" name="" id="file" style={{display:"none"}}/>
+              </div>
+              <button className="userUpdateButton">Update</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
