@@ -5,12 +5,16 @@ import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LocationSearchingIcon from "@material-ui/icons/LocationSearching";
 import PublishIcon from '@material-ui/icons/Publish';
+import { Link } from "react-router-dom";
 export default function User() {
   return (
     <div className="user">
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
+        <Link to='/newUser'>
         <button className="userAddButton">Create</button>
+        
+        </Link>
       </div>
       <div className="userContainer">
         <div className="userShow">
@@ -113,7 +117,7 @@ export default function User() {
                   alt=""
                   className="userUpdateImg"
                 />
-                <label htmlFor="file"><PublishIcon/></label>
+                <label htmlFor="file"><PublishIcon  className='userUpdateIcon'/></label>
                 <input type="file" name="" id="file" style={{display:"none"}}/>
               </div>
               <button className="userUpdateButton">Update</button>
