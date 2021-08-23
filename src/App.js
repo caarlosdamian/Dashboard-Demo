@@ -8,6 +8,7 @@ import User from "./pages/user/User";
 import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
+import NewProduct from "./pages/newProduct/NewProduct";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             <Route path="/newUser" exact component={NewUser} />
             <Route path="/products" exact component={ProductList} />
             <Route path="/product/:productsId" exact component={Product} />
-            <Route path="/products/newProduct" exact component={ProductList} />
+            <Route path="/products/newProduct" exact component={NewProduct} />
           </Switch>
         </div>
       </div>
